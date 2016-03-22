@@ -3,13 +3,16 @@
 a = raw_input()
 b = len(a)
 x = 0
+flag = True
 for i in range(b):
 	if a[i] == ")":
-		x = x - 1
+		x -= 1
 	elif a[i] == "(":
-		x = x + 1
+		x += 1
+	if x < 0:
+	    flag = False
 
-if x != 0 or a[0]==")":
-	print "NotBalanced"
-else:
+if flag and x == 0:
 	print "Balanced"
+else:
+	print "NotBalanced"
