@@ -104,7 +104,7 @@ def winner(board):
 
 
 def human_move(board, human):
-    """Отриммує хід людини."""  
+    """Отримує хід людини."""  
     legal = legal_moves(board)
     move = None
     while move not in legal:
@@ -166,7 +166,7 @@ def congrat_winner(the_winner, computer, human):
               "Ніколи більше!")
 
     elif the_winner == TIE:
-        print("и неймовірний везунчик: ти зміг звести гру внічию.  \n" \
+        print("Ти неймовірний везунчик: ти зміг звести гру внічию.  \n" \
               "Святкуй свій успіх... навряд ти зможеш це повторити.")
 
 
